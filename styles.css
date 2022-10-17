@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+/* - Very dark blue  */
+/* - Dark desaturated blue  */
+--main-background: hsl(233, 47%, 7%);
+--card-background: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 64%, 61%);
+
+--White: hsl(0, 0%, 100%);
+--Slightly-white-text: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-heading : hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: var(--main-background);
+    color: var(--White);
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.container{
+    background-color: var(--card-background);
+    display: flex;
+    /* border: 2px solid lime; */
+}
+.about{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.heading{
+    font-size: 2.3rem;
+    width: 30vw;    
+    margin-inline: auto;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.heading span{
+    color: var(--Soft-violet);
+}
+.text{
+    width: 30vw;    
+    margin-inline: auto;
+    line-height: 33px;
+    color: var(--Slightly-transparent-heading);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.stats{
+    color: var(--Slightly-transparent-heading);
+    font-size: 15px;
+    width: 30vw;    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-inline: auto;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.stats h1{
+    color: #fff;
+}
+.stats p{
+    text-transform: uppercase;
+    font-family:'Lexend Deca', sans-serif;
+    font-size: 12px;
+    padding: 8px 0;
+    font-weight: 200;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    background-image: var(--Soft-violet);
+    z-index: 10;
+}
+
+@media (max-width: 375px) {
+    
+}
